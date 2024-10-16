@@ -27,7 +27,7 @@ talk: func [index [integer!]
 ][
 	unless none? languages/:index [
 		print ["Index:" index "Language:" languages/:index labels/:index]
-		prog: rejoin ["say -v " voices/:index " " sentences/:index]
+		prog: rejoin ["say -v " voices/:index  " --interactive=/red " sentences/:index]
 		print as-yellow prog
 		call/shell/wait prog
 	]
