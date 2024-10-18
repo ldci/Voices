@@ -2,7 +2,6 @@
 REBOL [ 
 ] 
 
-volume: 	10			;--default volume
 returnStr: 	""			;--selected voice
 ret: 		-1			;--error value
 volume: 	30			;--default volume
